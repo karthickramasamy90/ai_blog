@@ -41,7 +41,6 @@ const ChatAssistant = () => {
   const chatEndRef = useRef<HTMLDivElement | null>(null);
   const recognitionRef = useRef<SpeechRecognition | null>(null);
 
-   // 🔽 Scroll to bottom whenever messages update
    useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [messages]);
